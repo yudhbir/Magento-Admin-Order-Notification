@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>YRS_Notifications</name>
+    <version>0.0.1</version>
+    <stability>stable</stability>
+    <license>Open Software License</license>
+    <channel>local</channel>
+    <extends/>
+    <summary>Admin Notification after placing order</summary>
+    <description>Generate admin notification to admin when order is placed , user can add multiple notification email to get notification of placed order</description>
+    <notes>YRS_Notification 0.0.1 version</notes>
+    <authors><author><name>Yudhbir Singh</name><user>Yudhbir</user><email>sachinsingh3066@gmail.com</email></author></authors>
+    <date>2017-01-11</date>
+    <time>06:00:11</time>
+    <contents><target name="magelocal"><dir name="YRS"><dir name="Notification"><dir name="etc"><file name="config.xml" hash="6212316260049617a248a10250b0732e"/><file name="system.xml" hash="48871751c24b7a9a2d88a46b51068b13"/></dir><dir name="Helper"><file name="Data.php" hash="8284c606829804d799504bd2020a14ae"/></dir><dir name="Model"><file name="Observer.php" hash="34f7cc706f164b662d5a0b6b457ec2f0"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="YRS_Notification.xml" hash="bb908cce2abb86efc6849b424c0c5a54"/></dir></target><target name="magelocale"><dir name="en_US"><dir name="template"><dir name="email"><file name="order_custom_notification.html" hash="b690db082c568701bc287001e7fe9c39"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php><package><name>YRS_Notification</name><channel>local</channel><min>1.8</min><max>1.9</max></package></required></dependencies>
+</package>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <YRS_Notification>
+            <version>0.0.1</version>
+        </YRS_Notification>
+    </modules>
+    <global>
+        <models>
+            <notification>
+                <class>YRS_Notification_Model</class>
+            </notification>
+        </models>
+		<helpers>
+            <notification>
+                <class>YRS_Notification_Helper</class>
+            </notification>
+        </helpers>		
+        <events>
+            <sales_order_save_after>
+                <observers>
+                    <Notification_model_observer>
+                        <type>singleton</type>
+                        <class>YRS_Notification_Model_Observer</class>
+                        <method>Admin_Notification</method>
+                    </Notification_model_observer>
+                </observers>
+            </sales_order_save_after>			
+        </events>
+		<template>
+            <email>               
+                <order_custom_notification>
+                    <label>Custom email</label>
+                    <file>order_custom_notification.html</file>
+                    <type>html</type>
+                </order_custom_notification>
+            </email>
+        </template>
+    </global> 
+</config> 

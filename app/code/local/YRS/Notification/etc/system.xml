@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <sales translate="label" module="notification"> 
+            <groups>
+                <notification_group translate="label" module="notification">
+                    <label>Admin Notification</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store> 
+                    <fields>											
+                        <notification_enable translate="label">
+							<label>Enable:</label>
+							<comment></comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<can_be_empty>1</can_be_empty>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+						</notification_enable>						
+                        <notification_email translate="label">
+                            <label>Notification Emails: </label>
+                            <comment>add notification emails by comma separated e.g abc@test.com,abc@test1.com</comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </notification_email>
+                    </fields>
+                </notification_group>
+            </groups>
+        </sales>
+    </sections>
+</config>
